@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_bg3"
+    tools:context=".activityy.ForgetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/bg_et"
+            android:hint="@string/InputPhoneNumber"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et"
+            android:hint="@string/InputPassword"
+            android:importantForAutofill="no"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_et"
+            android:hint="@string/InputPasswordAgain"
+            android:importantForAutofill="no"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:textSize="24sp"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_et"
+                android:hint="@string/InputVerificationCode"
+                android:importantForAutofill="no"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:textSize="24sp"
+                tools:ignore="RtlSymmetry,TextFields" />
+
+            <ImageView
+                android:id="@+id/code_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/Sure"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="AppName">回调</string>
+    <string name="ForgetPassword">忘记密码</string>
+    <string name="SignUpNow">立即注册</string>
+    <string name="LogIn">登陆</string>
+    <string name="Register">注册</string>
+    <string name="Sure">确定</string>
+    <string name="InputPhoneNumber">请输入手机号</string>
+    <string name="InputCorrectPhoneNumber">请输入正确的手机号</string>
+    <string name="InputPassword">请输入密码</string>
+    <string name="InputPasswordAgain">请再次输入密码</string>
+    <string name="TwoPasswordsAreNotTheSame">两个密码不相同</string>
+    <string name="InputVerificationCode">请输入验证码</string>
+    <string name="InputCorrectVerificationCode">请输入正确的验证码</string>
+    <string name="RememberMe">记住账号</string>
+    <string name="FrontPage">首页</string>
+    <string name="Books">书籍</string>
+    <string name="Mine">我的</string>
+
+</resources>
