@@ -1,6 +1,7 @@
 package com.example.login.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,31 +23,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         activityMainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(activityMainBinding.getRoot());
 
+        activityMainBinding.login.setOnClickListener(this);
         activityMainBinding.from.setOnClickListener(this);
         activityMainBinding.spinner.setOnClickListener(this);
         activityMainBinding.imageSwitcher.setOnClickListener(this);
-        activityMainBinding.viewPager.setOnClickListener(this);
+        activityMainBinding.viewpager.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent;
         switch (v.getId()) {
+            case R.id.login:
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
             case R.id.from:
-                intent = new Intent(this, FormActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, FormActivity.class));
                 break;
             case R.id.spinner:
-                intent = new Intent(this, SpinnerActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, SpinnerActivity.class));
                 break;
             case R.id.image_switcher:
-                intent = new Intent(this, ImageSwitcherActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(this, ImageSwitcherActivity.class));
                 break;
-            case R.id.view_pager:
-                intent = new Intent(this, ViewPagerActivity.class);
-                startActivity(intent);
+            case R.id.viewpager:
+                startActivity(new Intent(this, ViewPagerActivity.class));
                 break;
             default:
                 break;

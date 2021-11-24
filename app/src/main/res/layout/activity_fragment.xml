@@ -22,10 +22,11 @@
             android:id="@+id/rb_home"
             style="@style/MainButtonStyle"
             android:drawableTop="@drawable/fragment_home"
-            android:text="@string/FrontPage" />
+            android:text="@string/FrontPage"
+            android:checked="true"/>
 
         <RadioButton
-            android:id="@+id/rb_book"
+            android:id="@+id/rb_books"
             style="@style/MainButtonStyle"
             android:drawableTop="@drawable/fragment_books"
             android:text="@string/Books" />

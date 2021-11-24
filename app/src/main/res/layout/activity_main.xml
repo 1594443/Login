@@ -4,42 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activityy.MainActivity">
+    tools:context=".activity.MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/from"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="from"
-            android:textAllCaps="false" />
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="spinner"
-            android:textAllCaps="false" />
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="login"
+                android:textAllCaps="false" />
 
-        <Button
-            android:id="@+id/image_switcher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="imageswitcher"
-            android:textAllCaps="false" />
+            <Button
+                android:id="@+id/from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="from"
+                android:textAllCaps="false" />
 
-        <Button
-            android:id="@+id/view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="viewpager"
-            android:textAllCaps="false" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="spinner"
+                android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/image_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="imageSwitcher"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="viewpager"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

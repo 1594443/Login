@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activityy.SpinnerActivity">
+    tools:context=".activity.SpinnerActivity">
 
     <TextView
         android:id="@+id/tv_spinner1"
